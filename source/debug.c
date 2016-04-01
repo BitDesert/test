@@ -1,10 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-#define DBGC_MAX_FIXED 22
-
-int DEBUGLEVEL_CLASS[DBGC_MAX_FIXED + 1] = { 0 , 0 };
-
 int lcl_debug_level = 0;
 
 int dbgtext(const char *format, ...) 

@@ -1,5 +1,4 @@
 #define MAX_DEBUG_LEVEL 1000
-#define DBGC_MAX_FIXED		22
 
 #if (__GNUC__ >= 3)
 /* the strange !! is to ensure that __builtin_expect() takes either 0 or 1
@@ -19,11 +18,7 @@
 #endif
 #endif
 
-extern int *DEBUGLEVEL_CLASS;
-
 extern int lcl_debug_level;
-
-#define DBGC_CLASS 0
 
 #define CHECK_DEBUGLVL( level ) \
   ( ((level) <= MAX_DEBUG_LEVEL) && \
