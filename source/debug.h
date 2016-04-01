@@ -21,15 +21,17 @@
 
 extern int *DEBUGLEVEL_CLASS;
 
+extern int lcl_debug_level;
+
 #define DBGC_CLASS 0
 
 #define CHECK_DEBUGLVL( level ) \
   ( ((level) <= MAX_DEBUG_LEVEL) && \
-      unlikely(DEBUGLEVEL_CLASS[ DBGC_CLASS ] >= (level)))
+      unlikely(lcl_debug_level >= (level)))
 
 #define DEBUG( level, body ) \
  (void)( ((level) <= MAX_DEBUG_LEVEL) && \
- unlikely(DEBUGLEVEL_CLASS[ DBGC_CLASS ] >= (level))           \
+ unlikely(lcl_debug_level >= (level))           \
   && (dbgtext body) )
 
 #define DEBUGLVL( level ) \
