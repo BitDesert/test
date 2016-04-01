@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-int DEBUGLVL = 2;
+int DEBUGLVL = 0;
 
 int dbgtext(const char *format, ...) 
 {
