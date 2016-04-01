@@ -16,7 +16,7 @@
 #include <util/memory.h>
 #include <credentials.h>
 #include <util/time.h>
-#include <util/debug.h>
+#include "debug.h"
 #include <smb_cliraw.h>
 #include <smb_cli.h>
 #include <dcerpc.h>

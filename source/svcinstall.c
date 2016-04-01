@@ -14,7 +14,7 @@
 #include <smb_cliraw.h>
 #include <smb_cli.h>
 #include <smb_composite.h>
-#include <util/debug.h>
+#include "debug.h"
 
 #include "winexesvc.h"
 #include "svcinstall.h"

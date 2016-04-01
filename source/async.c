@@ -13,7 +13,7 @@
 #include <util/data_blob.h>
 #include <util/time.h>
 #include <smb_cliraw.h>
-#include <util/debug.h>
+#include "debug.h"
 
 #include "async.h"
 
